@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-blue">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['/']">Online Bus Booking</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container">
+    <form class="form-horizontal" role="form">
+        <h2>Login</h2>
+        <div class="form-group">
+            <label for="email" class="col-sm-3 control-label">Email </label>
+            <div class="col-sm-12">
+                <input type="email" id="email" placeholder="Email" class="form-control" name= "email" [(ngModel)]="user.email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="col-sm-3 control-label">Password*</label>
+            <div class="col-sm-12">
+                <input type="password" id="password" placeholder="Password" class="form-control" name="password" [(ngModel)]="user.password">
+            </div>
+        </div> <!-- /.form-group -->
+        <button type="submit" (click)="validate()" class="btn btn-danger btn-block">Login</button>
+    </form> 
+</div> 

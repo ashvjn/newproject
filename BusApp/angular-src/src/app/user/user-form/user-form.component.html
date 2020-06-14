@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-blue">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['/']">Online Bus Booking</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="container">
+    <form class="form-horizontal" role="form">
+        <h2>Payment Details</h2>
+        <form>
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" required name="user_name"  class="form-control form-control-sm">
+            </div>
+            <div class="form-group">
+              <label>Card number</label>
+              <input type="text" required name="user_mobile"  class="form-control form-control-sm">
+            </div>
+            <div class="form-group">
+              <label>Email </label>
+              <input type="email" required name="user_email"  class="form-control form-control-sm">
+            </div>
+            <button [routerLink]="['/print']" class="btn btn-sm btn-danger">Submit</button>
+          </form>
+          <hr>
+          <div class="">
+            <div class="card card-body block j_details">
+              <h6>Journy Details</h6>
+              <hr>
+              <h5 class="text-capitalize"style="color:coral"> </h5>
+              <p> Date & Time : </p>
+              <p> <br>
+                  <span>Coach Type :   </span>
+              </p>
+              <p >Seats No (
+                <li style="display:inline;color:coral">  </li>
+                
+                )</p>
+            </div>
+        </div>
+        
+    </form> <!-- /form -->
+</div> <!-- ./container -->

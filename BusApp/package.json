@@ -1,0 +1,24 @@
+{
+  "name": "busapp",
+  "version": "1.0.0",
+  "description": "Mean stack app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "^4.17.1",
+    "jsonwebtoken": "*",
+    "modules": "^0.4.0",
+    "mongoose": "*",
+    "node": "^14.2.0",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "author": "ash",
+  "license": "ISC"
+}

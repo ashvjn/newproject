@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-blue">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['/']">Online Bus Booking</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container" >
+    <form class="form-horizontal" role="form">
+        <h2>Select Bus</h2>
+        <div class="form-group">
+           <table class="table">
+              <thead>
+                  <tr>
+                              <th>Bus Name</th>
+                              <th>Dept. Time</th>
+                              <th>Coach Type</th>
+                              <th>Seats Available</th>
+                              <th>Fare</th>
+                              <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                            <td> <h6></h6></td>
+                           
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                             <ng-template #template>
+                         
+                                <div class="modal-body">
+                                    <button type="button" class="close pull-right" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                </div>
+                            </ng-template>
+                            <td><button [routerLink]="['/seat']" class="btn btn-danger btn-sm">View Seats</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+        </div>
+    </form> 
+</div> 
