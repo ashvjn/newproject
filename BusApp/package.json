@@ -11,7 +11,7 @@
     "bcryptjs": "*",
     "body-parser": "*",
     "cors": "*",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jsonwebtoken": "*",
     "modules": "^0.4.0",
     "mongoose": "*",
